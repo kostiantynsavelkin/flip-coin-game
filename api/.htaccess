@@ -1,0 +1,4 @@
+RewriteEngine On
+RewriteCond %{HTTPS} !=off
+RewriteRule (.*) http://localhost:3001/$1 [P,L]
+RewriteRule (.*) wss://localhost:3001/$1 [P,L]

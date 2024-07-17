@@ -1,0 +1,77 @@
+const FlipCoin = artifacts.require("FlipCoin");
+
+/**
+ * Constructor inherits VRFConsumerBase
+ *
+ * Network: Mumbai network
+ * Chainlink VRF Coordinator address: 0x8C7382F9D8f56b33781fE506E897a4F1e2d17255
+ * LINK token address:                0x326C977E6efc84E512bB9C30f76E30c160eD06FB
+ * Key Hash:                          0x6e75b569a01ef56d18cab6a8e71e6600d6ce853834d4a5748b720d06f878b3a4
+ * Fee : 100000000000000 : 0.0001 LINK
+ * @param _vrfCoordinator Chainlink VRF Coordinator address
+ * @param _link LINK token address
+ * @param _keyHash Key Hash
+ * @param _fee LINK token fee amount
+ */
+
+// module.exports = function (deployer) {
+//   deployer.deploy(
+//     FlipCoin,
+//     "0x8c7382f9d8f56b33781fe506e897a4f1e2d17255",
+//     "0x326c977e6efc84e512bb9c30f76e30c160ed06fb",
+//     "0x6e75b569a01ef56d18cab6a8e71e6600d6ce853834d4a5748b720d06f878b3a4",
+//     100000000000000,
+//     "0xb820ebdeaffbaf4cdfa6232a7f52027f43751a57"
+//   );
+// };
+
+/**
+ * Constructor inherits VRFConsumerBase
+ *
+ * Network: Polygon network
+ * Chainlink VRF Coordinator address: 0x3d2341ADb2D31f1c5530cDC622016af293177AE0
+ * LINK token address:                0xb0897686c545045aFc77CF20eC7A532E3120E0F1
+ * Key Hash:                          0xf86195cf7690c55907b2b611ebb7343a6f649bff128701cc542f0569e2c549da
+ * Fee : 100000000000000 : 0.0001 LINK
+ * @param _vrfCoordinator Chainlink VRF Coordinator address
+ * @param _link LINK token address
+ * @param _keyHash Key Hash
+ * @param _fee LINK token fee amount
+ * @param _mmf MMF token address
+ */
+
+module.exports = function (deployer) {
+  deployer.deploy(
+    FlipCoin,
+    "0x3d2341ADb2D31f1c5530cDC622016af293177AE0",
+    "0xb0897686c545045aFc77CF20eC7A532E3120E0F1",
+    "0xf86195cf7690c55907b2b611ebb7343a6f649bff128701cc542f0569e2c549da",
+    100000000000000,
+    "0x22a31bD4cB694433B6de19e0aCC2899E553e9481"
+  );
+};
+
+/**
+ * Constructor inherits VRFConsumerBase
+ *
+ * Network: BSC test network
+ * Chainlink VRF Coordinator address: 0xa555fC018435bef5A13C6c6870a9d4C11DEC329C
+ * LINK token address:                0x84b9B910527Ad5C03A9Ca831909E21e236EA7b06
+ * Key Hash:                          0xcaf3c3727e033261d383b315559476f48034c13b18f8cafed4d871abe5049186
+ * Fee : 100000000000000000 : 0.1 LINK
+ * @param _vrfCoordinator Chainlink VRF Coordinator address
+ * @param _link LINK token address
+ * @param _keyHash Key Hash
+ * @param _fee LINK token fee amount
+ */
+
+// module.exports = function (deployer) {
+//   deployer.deploy(
+//     FlipCoin,
+//     "0xa555fC018435bef5A13C6c6870a9d4C11DEC329C",
+//     "0x84b9B910527Ad5C03A9Ca831909E21e236EA7b06",
+//     "0xcaf3c3727e033261d383b315559476f48034c13b18f8cafed4d871abe5049186",
+//     100000000000000000,
+//     "0x4eCAae52e50BcA4Af65fEAF9285c3EcbA00d18D3"
+//   );
+// };

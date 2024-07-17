@@ -1,0 +1,8 @@
+const FlipCoinProxy = artifacts.require("FlipCoinProxy");
+
+module.exports = function (deployer) {
+  deployer.deploy(
+    FlipCoinProxy,
+    "0x8bdac18d94537E712E49EAc03240e5C0C9dde358" //Logic Contract
+  );
+};
